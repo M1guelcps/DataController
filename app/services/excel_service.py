@@ -10,7 +10,7 @@ class ExcelImportService:
     def extrair_clientes(file_content: bytes) -> List[ClienteCreate]:
         # 1. Carrega o arquivo em memória usando o Pandas
         try:
-            df = pd.read_excel(BytesIO(file_content))
+            df = pd.read_excel(BytesIO(file_content),engine="pyxlsb")
         except Exception:
             raise ValueError("Não foi possível ler o arquivo. Verifique se é um Excel válido.")
 
