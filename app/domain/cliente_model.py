@@ -1,10 +1,12 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from core.database import Base
 
-class Cliente(Base):
-    __tablename__ = "clientes"
+class Usuario(Base):
+    __tablename__ = "usuarios"
 
     id = Column(Integer, primary_key=True, index=True)
-    nome = Column(String, index=True)
-    cnpj = Column(String, unique=True, index=True)
-    email = Column(String)
+    nome = Column(String)
+    email = Column(String, unique=True, index=True)
+    senha_hash = Column(String) # NUNCA guardamos a senha em texto!
+    ativo = Column(Boolean, default=True)
+    perfil = Column(String, default="operador") # ex: "admin", "operador"
