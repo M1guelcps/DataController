@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from app.core.config import settings
-
+from core.config import settings
 # Engine é o motor que gerencia a conexão com o banco
 # connect_args={"check_same_thread": False} é necessário apenas para SQLite no FastAPI
 engine = create_engine(

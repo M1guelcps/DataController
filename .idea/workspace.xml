@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="19ad0319-e262-4d70-950c-a72107eb9708" name="Changes" comment="" />
+    <list default="true" id="19ad0319-e262-4d70-950c-a72107eb9708" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/api/routers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="3.9545151081848453E-7" />
+      <entry key="MS500" value="0.05651600227896464" />
+      <entry key="S2" value="0.8182355921816544" />
+      <entry key="S5" value="2.0491551675679665" />
+      <entry key="S10" value="4.326538884579015" />
+      <entry key="S30" value="11.149594297316108" />
+      <entry key="S60" value="17.796920054647657" />
+      <entry key="M2" value="30.957597127751914" />
+      <entry key="M5" value="61.213354750830746" />
+      <entry key="M10" value="95.76992462149889" />
+      <entry key="M15" value="131.4794862061368" />
+      <entry key="M30" value="239.5436428512811" />
+      <entry key="H1" value="377.29005269821005" />
+      <entry key="H2" value="492.45646454915635" />
+      <entry key="H4" value="567.6775518137247" />
+      <entry key="D1" value="641.7701265244648" />
+      <entry key="W1" value="655.6508172853813" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000854831738824" />
+      <entry key="S2" value="1.0961546218527012" />
+      <entry key="S5" value="1.3921647571565434" />
+      <entry key="S10" value="1.6419408808258475" />
+      <entry key="S30" value="2.11043971868576" />
+      <entry key="S60" value="2.501477471188573" />
+      <entry key="M2" value="3.0913183073819543" />
+      <entry key="M5" value="4.341191926507371" />
+      <entry key="M10" value="5.889871474894824" />
+      <entry key="M15" value="7.277089224316118" />
+      <entry key="M30" value="10.592807429692261" />
+      <entry key="H1" value="14.220531113796065" />
+      <entry key="H2" value="17.064214100805255" />
+      <entry key="H4" value="18.8697162322463" />
+      <entry key="D1" value="20.619776879795904" />
+      <entry key="W1" value="20.94502835540686" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.01819896325273522" />
+      <entry key="MS500" value="0.4648518120680994" />
+      <entry key="S2" value="1.4439657805400021" />
+      <entry key="S5" value="3.052960717329934" />
+      <entry key="S10" value="5.699277549126011" />
+      <entry key="S30" value="13.135984872709022" />
+      <entry key="S60" value="20.22591208263869" />
+      <entry key="M2" value="34.007009601746915" />
+      <entry key="M5" value="65.52951558855652" />
+      <entry key="M10" value="101.63836459790294" />
+      <entry key="M15" value="138.73726465944608" />
+      <entry key="M30" value="250.12179566789894" />
+      <entry key="H1" value="391.5009230093993" />
+      <entry key="H2" value="509.51500530838393" />
+      <entry key="H4" value="586.5441741938929" />
+      <entry key="D1" value="662.38934719352" />
+      <entry key="W1" value="676.5957651181066" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4,
@@ -23,12 +107,31 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.python.group.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\Desktop\Cialne\CDATA-APP\CDATA-BACKEND\app\api\routers" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -43,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787426015364</updated>
-      <workItem from="1787426016378" duration="1000" />
+      <workItem from="1787426016378" duration="5091000" />
     </task>
     <servers />
   </component>
