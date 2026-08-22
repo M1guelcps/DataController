@@ -20,3 +20,19 @@ class ClienteService:
     @staticmethod
     def listar_clientes(db: Session):
         return ClienteRepository.buscar_todos(db)
+
+
+    @staticmethod
+    def importar_lote(db: Session, clientes: list[ClienteCreate]):
+        resultado = {"sucessos": 0, "erros": []}
+
+        for cliente in clientes:
+            try:
+                # Reutilizamos a lógica de criação que já tem a validação de CNPJ!
+                ClienteService.criar_cliente(db, cliente)
+                resultado["sucessos"] += 1
+            except ValueError as e:
+                # Se o CNPJ já existir, não quebramos tudo, apenas anotamos o erro
+                resultado["erros"].append({"cnpj": cliente.cnpj, "motivo": str(e)})
+
+        return resultado
