@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19ad0319-e262-4d70-950c-a72107eb9708" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/routers/relatorio_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/MODELO CARTA PAPELAO.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/MODELO COMPOSICAO.ods" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/MODELO EXPEDICAO.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Modelo Carta Plastico.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/NOVO MODELO INSPEÇÃO- piloto (EM TESTE).xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template_clientes.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste_unitario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f547244-44ed-41a4-b3ce-62355dd492e3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f547244-44ed-41a4-b3ce-62355dd492e3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/routers/auth_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routers/auth_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/routers/cliente_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routers/cliente_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/cliente_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/cliente_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/usuario_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/usuario_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/cliente_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/cliente_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/usuario_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/usuario_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/cliente_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/cliente_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/excel_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/excel_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco_dados.db" beforeDir="false" afterPath="$PROJECT_DIR$/banco_dados.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000001300693" />
-      <entry key="S2" value="1.003377098756374" />
-      <entry key="S5" value="1.102808610502549" />
-      <entry key="S10" value="1.3356042476148735" />
-      <entry key="S30" value="2.148079527798356" />
-      <entry key="S60" value="3.660033298159283" />
-      <entry key="M2" value="8.839343708835667" />
-      <entry key="M5" value="35.286937207798246" />
-      <entry key="M10" value="79.59111466825391" />
-      <entry key="M15" value="116.63460195601374" />
-      <entry key="M30" value="229.42668494183758" />
-      <entry key="H1" value="473.082434055589" />
-      <entry key="H2" value="860.831207918888" />
-      <entry key="H4" value="1268.4443089479946" />
-      <entry key="D1" value="1843.5758412073424" />
-      <entry key="W1" value="1974.9444184744664" />
+      <entry key="MS100" value="1.2937587046124193E-6" />
+      <entry key="MS500" value="0.06643097964740957" />
+      <entry key="S2" value="0.5076830504347148" />
+      <entry key="S5" value="0.7624951150331067" />
+      <entry key="S10" value="0.8732096627002628" />
+      <entry key="S30" value="0.955812804618775" />
+      <entry key="S60" value="0.9776571186356208" />
+      <entry key="M2" value="0.9896021582563981" />
+      <entry key="M5" value="1.1943074866873826" />
+      <entry key="M10" value="3.5142944044711593" />
+      <entry key="M15" value="9.221460783147922" />
+      <entry key="M30" value="50.47265432858768" />
+      <entry key="H1" value="207.88579342565873" />
+      <entry key="H2" value="575.5176924411796" />
+      <entry key="H4" value="1077.57387654914" />
+      <entry key="D1" value="1945.4865956618796" />
+      <entry key="W1" value="2166.4212441784753" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.0753584466051236E-154" />
-      <entry key="MS500" value="2.198526379198948E-31" />
-      <entry key="S2" value="3.1645216949166545E-8" />
-      <entry key="S5" value="0.001642498061610916" />
-      <entry key="S10" value="0.06976949051809861" />
-      <entry key="S30" value="1.006521287521545" />
-      <entry key="S60" value="2.135099389317069" />
-      <entry key="M2" value="3.298807512046412" />
-      <entry key="M5" value="4.618303456315441" />
-      <entry key="M10" value="5.530508071481912" />
-      <entry key="M15" value="6.148195058127021" />
-      <entry key="M30" value="8.051153393439604" />
-      <entry key="H1" value="12.930761723557078" />
-      <entry key="H2" value="21.83200098713368" />
-      <entry key="H4" value="31.745868709536712" />
-      <entry key="D1" value="46.10569849216883" />
-      <entry key="W1" value="49.417857536587036" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0000000000060365" />
+      <entry key="M5" value="1.0000540805541687" />
+      <entry key="M10" value="1.0141484411565742" />
+      <entry key="M15" value="1.107395001898573" />
+      <entry key="M30" value="2.0590359958434057" />
+      <entry key="H1" value="5.685837599571946" />
+      <entry key="H2" value="14.246501563633837" />
+      <entry key="H4" value="26.279997169435937" />
+      <entry key="D1" value="47.549781773108194" />
+      <entry key="W1" value="53.01862245367085" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.9775118793747976E-8" />
-      <entry key="MS500" value="0.034626010895766474" />
-      <entry key="S2" value="0.43360648271004903" />
-      <entry key="S5" value="0.802986908825216" />
-      <entry key="S10" value="1.219392732842166" />
-      <entry key="S30" value="3.049343255816637" />
-      <entry key="S60" value="5.720803115557099" />
-      <entry key="M2" value="12.090468940723499" />
-      <entry key="M5" value="39.88157867672064" />
-      <entry key="M10" value="85.1080814802206" />
-      <entry key="M15" value="122.7729287028712" />
-      <entry key="M30" value="237.47141891650483" />
-      <entry key="H1" value="486.00758551386906" />
-      <entry key="H2" value="882.6579339427532" />
-      <entry key="H4" value="1300.1861081531215" />
-      <entry key="D1" value="1889.680510344346" />
-      <entry key="W1" value="2024.3621173335546" />
+      <entry key="MS100" value="8.93246034171383E-6" />
+      <entry key="MS500" value="0.1415897462817217" />
+      <entry key="S2" value="1.0171455906384457" />
+      <entry key="S5" value="1.5242776588977818" />
+      <entry key="S10" value="1.7456707589350986" />
+      <entry key="S30" value="1.9112695756153464" />
+      <entry key="S60" value="1.9551212185774465" />
+      <entry key="M2" value="1.9782643239470759" />
+      <entry key="M5" value="2.1896218017110587" />
+      <entry key="M10" value="4.525318259743539" />
+      <entry key="M15" value="10.325972032306844" />
+      <entry key="M30" value="52.52876868500717" />
+      <entry key="H1" value="213.5682975172207" />
+      <entry key="H2" value="589.7603075847168" />
+      <entry key="H4" value="1103.850292339299" />
+      <entry key="D1" value="1993.0352828292064" />
+      <entry key="W1" value="2219.4396917491354" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -117,36 +116,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/Desktop/Cialne/CDATA-APP/CDATA-BACKEND/app/domain&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.relatorio_service.executor": "Run",
+    "Python.teste_unitario.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/migue/Desktop/Cialne/CDATA-APP/CDATA-BACKEND/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\Desktop\Cialne\CDATA-APP\CDATA-BACKEND\assets" />
       <recent name="C:\Users\migue\Desktop\Cialne\CDATA-APP\CDATA-BACKEND\app\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -170,7 +172,8 @@
       <workItem from="1787426016378" duration="16874000" />
       <workItem from="1787445980570" duration="1902000" />
       <workItem from="1787456806809" duration="668000" />
-      <workItem from="1787498191277" duration="1869000" />
+      <workItem from="1787498191277" duration="5908000" />
+      <workItem from="1787504447561" duration="6331000" />
     </task>
     <servers />
   </component>
@@ -187,5 +190,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CDATA_BACKEND$relatorio_service.coverage" NAME="relatorio_service Coverage Results" MODIFIED="1787504997079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services" />
+    <SUITE FILE_PATH="coverage/CDATA_BACKEND$teste_unitario.coverage" NAME="teste_unitario Coverage Results" MODIFIED="1787506337540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

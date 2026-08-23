@@ -7,7 +7,15 @@ from app.services.cliente_service import ClienteService
 from app.services.excel_service import ExcelImportService
 from app.core.security import usuario_atual
 
-router = APIRouter(prefix="/clientes", tags=["Clientes"])
+
+# No APIRouter, adicionamos o dependencies=[Depends(usuario_atual)]
+# Isso aplica a trava de segurança para TODAS as rotas de clientes de uma vez só!
+
+router = APIRouter(
+    prefix="/clientes",
+    tags=["Clientes"],
+    dependencies=[Depends(usuario_atual)],
+)
 
 @router.post("/", response_model=ClienteResponse)
 def criar_cliente(cliente: ClienteCreate, db: Session = Depends(get_db)):
@@ -17,6 +25,10 @@ def criar_cliente(cliente: ClienteCreate, db: Session = Depends(get_db)):
     except ValueError as e:
         # Se o Service reclamar (ex: CNPJ duplicado), convertemos para um Erro HTTP 400
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.get("/", response_model=List[ClienteResponse])
+def listar_clientes(db: Session = Depends(get_db)):
+    return ClienteService.listar_clientes(db)
 
 
 @router.post("/importar")
@@ -65,16 +77,9 @@ async def importar_clientes_excel(
             detail=f"Erro interno ao processar arquivo: {str(e)}"
         )
 
-@router.get("/", response_model=List[ClienteResponse])
-def listar_clientes(db: Session = Depends(get_db)):
-    return ClienteService.listar_clientes(db)
+
 
 
 
 # No APIRouter, adicionamos o dependencies=[Depends(usuario_atual)]
 # Isso aplica a trava de segurança para TODAS as rotas de clientes de uma vez só!
-router = APIRouter(
-    prefix="/clientes",
-    tags=["Clientes"],
-    dependencies=[Depends(usuario_atual)]
-)
