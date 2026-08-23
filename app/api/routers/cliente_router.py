@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List
-from core.database import get_db
-from domain.cliente_schema import ClienteCreate, ClienteResponse
-from services.cliente_service import ClienteService
-from services.excel_service import ExcelImportService
-from core.security import usuario_atual
+from app.core.database import get_db
+from app.domain.cliente_schema import ClienteCreate, ClienteResponse
+from app.services.cliente_service import ClienteService
+from app.services.excel_service import ExcelImportService
+from app.core.security import usuario_atual
 
 router = APIRouter(prefix="/clientes", tags=["Clientes"])
 

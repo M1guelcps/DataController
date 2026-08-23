@@ -1,7 +1,7 @@
 import pandas as pd
 from io import BytesIO
 from typing import List
-from domain.cliente_schema import ClienteCreate
+from app.domain.cliente_schema import ClienteCreate
 
 
 class ExcelImportService:

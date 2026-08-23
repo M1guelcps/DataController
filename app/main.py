@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from core.config import settings
-from core.database import Base, engine
-from api.routers import cliente_router
-from api.routers import auth_router
+from app.core.config import settings
+from app.core.database import Base, engine
+from app.api.routers import cliente_router
+from app.api.routers import auth_router
 
 # Cria as tabelas no banco de dados caso não existam
 Base.metadata.create_all(bind=engine)

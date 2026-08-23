@@ -1,8 +1,8 @@
 from typing import Any
 
 from sqlalchemy.orm import Session
-from repositories.cliente_repository import ClienteRepository
-from domain.cliente_schema import ClienteCreate
+from app.repositories.cliente_repository import ClienteRepository
+from app.domain.cliente_schema import ClienteCreate
 
 
 class ClienteService:

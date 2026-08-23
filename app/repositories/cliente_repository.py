@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from domain.cliente_model import Cliente
-from domain.cliente_schema import ClienteCreate
+from app.domain.cliente_model import Cliente
+from app.domain.cliente_schema import ClienteCreate
 
 
 class ClienteRepository:
