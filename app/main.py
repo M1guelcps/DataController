@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from core.config import settings
 from core.database import Base, engine
 from api.routers import cliente_router
+from api.routers import auth_router
 
 # Cria as tabelas no banco de dados caso não existam
 Base.metadata.create_all(bind=engine)
@@ -13,6 +14,7 @@ app = FastAPI(
 )
 
 app.include_router(cliente_router.router)
+app.include_router(auth_router.router)
 # Rota básica de verificação de saúde (Health Check)
 @app.get("/")
 def health_check():

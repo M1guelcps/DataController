@@ -1,11 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List
-
 from core.database import get_db
 from domain.cliente_schema import ClienteCreate, ClienteResponse
 from services.cliente_service import ClienteService
 from services.excel_service import ExcelImportService
+from core.security import usuario_atual
+
 router = APIRouter(prefix="/clientes", tags=["Clientes"])
 
 @router.post("/", response_model=ClienteResponse)
@@ -67,3 +68,13 @@ async def importar_clientes_excel(
 @router.get("/", response_model=List[ClienteResponse])
 def listar_clientes(db: Session = Depends(get_db)):
     return ClienteService.listar_clientes(db)
+
+
+
+# No APIRouter, adicionamos o dependencies=[Depends(usuario_atual)]
+# Isso aplica a trava de segurança para TODAS as rotas de clientes de uma vez só!
+router = APIRouter(
+    prefix="/clientes",
+    tags=["Clientes"],
+    dependencies=[Depends(usuario_atual)]
+)

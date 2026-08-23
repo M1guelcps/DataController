@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./banco_dados.db"
 
     # Em produção, gere uma string longa aleatória e coloque numa variável de ambiente!
-    SECRET_KEY: str = "sua_chave_super_secreta_aqui_nao_use_em_producao"
+    SECRET_KEY: str = "teste123"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60  # O token expira em 1 hora
 

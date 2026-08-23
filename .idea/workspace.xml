@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19ad0319-e262-4d70-950c-a72107eb9708" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b5dd9df-ff1f-4869-929f-21a13054c286.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b5dd9df-ff1f-4869-929f-21a13054c286/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f547244-44ed-41a4-b3ce-62355dd492e3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f547244-44ed-41a4-b3ce-62355dd492e3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/routers/auth_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routers/auth_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/routers/cliente_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routers/cliente_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/banco_dados.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/banco_dados.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/excel_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/excel_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/cliente_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/cliente_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,100 +45,107 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000300639804" />
-      <entry key="S2" value="1.0221436832115338" />
-      <entry key="S5" value="1.332892887389239" />
-      <entry key="S10" value="1.9857466202832177" />
-      <entry key="S30" value="5.417964488438116" />
-      <entry key="S60" value="9.49089776302155" />
-      <entry key="M2" value="14.643247326779358" />
-      <entry key="M5" value="21.093296485555715" />
-      <entry key="M10" value="30.103769639515885" />
-      <entry key="M15" value="51.04239747068287" />
-      <entry key="M30" value="157.6105008332868" />
-      <entry key="H1" value="373.8428969968968" />
-      <entry key="H2" value="633.8428535952368" />
-      <entry key="H4" value="847.7966269223023" />
-      <entry key="D1" value="1095.585482043356" />
-      <entry key="W1" value="1146.2832307622352" />
+      <entry key="MS100" value="1.0000000000000053" />
+      <entry key="MS500" value="1.0024189744884935" />
+      <entry key="S2" value="1.372945883916307" />
+      <entry key="S5" value="2.021582781105116" />
+      <entry key="S10" value="2.429399772678866" />
+      <entry key="S30" value="2.8459857097032373" />
+      <entry key="S60" value="3.4285363356360627" />
+      <entry key="M2" value="4.584009936378363" />
+      <entry key="M5" value="6.486432864721341" />
+      <entry key="M10" value="15.104136462348714" />
+      <entry key="M15" value="38.510277809204105" />
+      <entry key="M30" value="154.7947421654502" />
+      <entry key="H1" value="409.7135327457753" />
+      <entry key="H2" value="783.7729990667665" />
+      <entry key="H4" value="1152.658448678223" />
+      <entry key="D1" value="1647.746042518286" />
+      <entry key="W1" value="1757.786066111785" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.677377677002461E-164" />
-      <entry key="MS500" value="1.7576247999382975E-33" />
-      <entry key="S2" value="6.490178746187478E-9" />
-      <entry key="S5" value="5.881149783905113E-4" />
-      <entry key="S10" value="0.03340497579840026" />
-      <entry key="S30" value="0.6830747998772555" />
-      <entry key="S60" value="1.599271208142296" />
-      <entry key="M2" value="2.5057605647861325" />
-      <entry key="M5" value="3.313042595957834" />
-      <entry key="M10" value="3.808256054943248" />
-      <entry key="M15" value="4.4662149569971294" />
-      <entry key="M30" value="7.512216675384755" />
-      <entry key="H1" value="13.633817737615667" />
-      <entry key="H2" value="20.866510593856884" />
-      <entry key="H4" value="26.719693735253813" />
-      <entry key="D1" value="33.40848742913284" />
-      <entry key="W1" value="34.76678172269853" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.888850419259305E-114" />
+      <entry key="S2" value="5.607721694848436E-29" />
+      <entry key="S5" value="5.006273600429306E-12" />
+      <entry key="S10" value="2.23747035744148E-6" />
+      <entry key="S30" value="0.013079338011370602" />
+      <entry key="S60" value="0.11436493348649726" />
+      <entry key="M2" value="0.3381789050813526" />
+      <entry key="M5" value="0.6507131122365943" />
+      <entry key="M10" value="0.9260354710661186" />
+      <entry key="M15" value="1.3548365768340784" />
+      <entry key="M30" value="3.4512294176522755" />
+      <entry key="H1" value="8.879532113147608" />
+      <entry key="H2" value="17.835295685627464" />
+      <entry key="H4" value="27.06822734625154" />
+      <entry key="D1" value="39.68539367298441" />
+      <entry key="W1" value="42.50692458947629" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108302" />
-      <entry key="MS500" value="0.9794203244374584" />
-      <entry key="S2" value="1.0163194218071208" />
-      <entry key="S5" value="1.3272925016662798" />
-      <entry key="S10" value="2.0062208272797197" />
-      <entry key="S30" value="6.053685057879972" />
-      <entry key="S60" value="11.038738992745346" />
-      <entry key="M2" value="17.109944681200076" />
-      <entry key="M5" value="24.385990642320518" />
-      <entry key="M10" value="33.90026337867095" />
-      <entry key="M15" value="55.49920193265337" />
-      <entry key="M30" value="165.1141844321128" />
-      <entry key="H1" value="387.46854151120334" />
-      <entry key="H2" value="654.7029960492468" />
-      <entry key="H4" value="874.5122260935898" />
-      <entry key="D1" value="1128.993115662012" />
-      <entry key="W1" value="1181.0498855739686" />
+      <entry key="MS100" value="0.009036626436762896" />
+      <entry key="MS500" value="0.3921177164531563" />
+      <entry key="S2" value="1.1442946743133793" />
+      <entry key="S5" value="1.9103162210698956" />
+      <entry key="S10" value="2.3682781087327505" />
+      <entry key="S30" value="2.8367359531084997" />
+      <entry key="S60" value="3.5299218811998876" />
+      <entry key="M2" value="4.913854393953946" />
+      <entry key="M5" value="7.132787126753261" />
+      <entry key="M10" value="16.027491876884742" />
+      <entry key="M15" value="39.86273781760497" />
+      <entry key="M30" value="158.24303384042042" />
+      <entry key="H1" value="418.5887762611994" />
+      <entry key="H2" value="801.6035891145689" />
+      <entry key="H4" value="1179.7229642728582" />
+      <entry key="D1" value="1687.430505133821" />
+      <entry key="W1" value="1800.292847687994" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3IHeeNGY2LvpxD6S9oudf7yAty5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/Desktop/Cialne/CDATA-APP/CDATA-BACKEND/app/domain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\Desktop\Cialne\CDATA-APP\CDATA-BACKEND\app\domain" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\migue\Desktop\Cialne\CDATA-APP\CDATA-BACKEND\app\api\routers" />
     </key>
@@ -149,11 +164,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787426015364</updated>
-      <workItem from="1787426016378" duration="10142000" />
+      <workItem from="1787426016378" duration="16874000" />
+      <workItem from="1787445980570" duration="741000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

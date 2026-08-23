@@ -29,8 +29,7 @@ def registrar_usuario(usuario: UsuarioCreate, db: Session = Depends(get_db)):
 # O OAuth2PasswordRequestForm é um padrão do FastAPI que faz o Swagger habilitar o botão verde "Authorize"
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     # Busca o usuário no banco
-    usuario = UsuarioRepository.buscar_por_email(db,
-                                                 form_data.username)  # OAuth2 usa 'username' para o campo principal (nosso email)
+    usuario = UsuarioRepository.buscar_por_email(db,form_data.username)  # OAuth2 usa 'username' para o campo principal (nosso email)
 
     # Valida usuário e senha
     if not usuario or not verificar_senha(form_data.password, usuario.senha_hash):
